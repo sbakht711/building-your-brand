@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shahaan Bakht | Portfolio</title>
+<meta name="description" content="Portfolio of Shahaan Bakht, business student at Rutgers Business School.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A2233;
+    --slate: #22324A;
+    --muted: #5B6576;
+    --paper: #F3F5F7;
+    --rule: #D5DAE1;
+    --signal: #F2B705;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Archivo", Arial, Helvetica, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  a { color: var(--slate); text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+  a:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }
+
+  /* Navigation */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--slate);
+  }
+  nav .wrap {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 1rem; padding-top: .9rem; padding-bottom: .9rem;
+  }
+  nav .name { color: #fff; font-weight: 700; text-decoration: none; font-stretch: 110%; }
+  nav ul { list-style: none; display: flex; gap: 1.5rem; }
+  nav ul a { color: #DCE2EA; text-decoration: none; font-size: .95rem; }
+  nav ul a:hover { color: var(--signal); }
+
+  .wrap { max-width: 52rem; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+
+  /* Hero / personal statement */
+  header#statement {
+    padding: 6rem 0 5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  header .who { color: var(--muted); margin-bottom: 1.25rem; }
+  header h1 {
+    font-size: clamp(2rem, 5.2vw, 3.4rem);
+    font-stretch: 118%;
+    font-weight: 750;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    max-width: 20ch;
+    padding-left: 1.25rem;
+    border-left: 8px solid var(--signal);
+  }
+  header .contact { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
+
+  section { padding: 4.5rem 0; border-bottom: 1px solid var(--rule); }
+  h2 {
+    font-size: 1.75rem; font-stretch: 112%; font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem; }
+  .skills h3 { font-size: 1.05rem; font-weight: 650; margin-bottom: .75rem; color: var(--slate); }
+  .skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .skills li {
+    background: #fff; border: 1px solid var(--rule);
+    padding: .3rem .75rem; border-radius: 4px; font-size: .95rem;
+  }
+
+  /* Projects */
+  .project { padding: 1.75rem 0; border-top: 1px solid var(--rule); }
+  .project:first-of-type { border-top: none; padding-top: 0; }
+  .project h3 { font-size: 1.3rem; font-weight: 700; font-stretch: 108%; }
+  .project .context { color: var(--muted); font-size: .95rem; margin: .2rem 0 .75rem; }
+  .project p { max-width: 65ch; }
+  .project .links { margin-top: .75rem; display: flex; gap: 1.25rem; flex-wrap: wrap; font-weight: 600; }
+
+  footer { padding: 2.5rem 0; color: var(--muted); font-size: .9rem; }
+
+  @media (max-width: 560px) {
+    nav ul { gap: 1rem; }
+    nav .name { display: none; }
+    header#statement { padding: 4rem 0 3.5rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="name" href="#statement">Shahaan Bakht</a>
+    <ul>
+      <li><a href="#statement">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- PERSONAL STATEMENT -->
+  <header id="statement">
+    <div class="wrap">
+      <p class="who">Shahaan Bakht, Rutgers Business School, Class of 2028</p>
+      <h1>A Rutgers business student who turns hands-on retail and healthcare billing experience into smarter, more efficient operations.</h1>
+      <div class="contact">
+        <a href="mailto:sb2630@scarletmail.rutgers.edu">sb2630@scarletmail.rutgers.edu</a>
+        <a href="https://www.linkedin.com/in/shahaan-bakht">LinkedIn</a>
+        <a href="https://github.com/sbakht711">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Business & operations</h3>
+          <ul>
+            <li>Merchandising</li>
+            <li>Inventory flow</li>
+            <li>Supply chain basics</li>
+            <li>Process improvement</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Finance & tools</h3>
+          <ul>
+            <li>Medical billing</li>
+            <li>Microsoft Excel</li>
+            <li>PowerPoint</li>
+            <li>HTML & CSS</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Professional</h3>
+          <ul>
+            <li>Customer service</li>
+            <li>Business ethics</li>
+            <li>Public speaking & debate</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Young Muslims merchandising campaign</h3>
+        <p class="context">Marketing &amp; Merchandising Manager, Young Muslims Old Bridge, Jan&ndash;May 2024</p>
+        <p>Developed and launched a branded merchandise campaign to grow the organization's visibility and engagement. I ran market research on audience preferences, worked with designers and vendors to deliver quality items on time and within budget, created marketing materials and social media campaigns that boosted awareness and sales, and tracked engagement and sales data to guide future branding decisions.</p>
+        <div class="links">
+          <a href="https://www.instagram.com/young_muslims/" target="_blank" rel="noopener">See the campaign on Instagram</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Space Shuttle Challenger ethics debate</h3>
+        <p class="context">Business Ethics course, Rutgers, Fall 2026</p>
+        <p>Researched the 1986 Challenger launch decision and argued a position on the engineers' and managers' responsibilities, applying ethical frameworks to a real case of organizational pressure and risk communication.</p>
+      </article>
+
+      <article class="project">
+        <h3>FedEx logistics and operations</h3>
+        <p class="context">Logistics &amp; Operations Management Associate, FedEx, East Brunswick, NJ, Jun&ndash;Sep 2025</p>
+        <p>Coordinated high-volume shipment processing to keep deliveries accurate and on time. I monitored inventory flow and package tracking to cut delays and errors, worked with cross-functional teams to improve workflow efficiency and hit daily performance goals, and followed strict safety protocols while operating material handling equipment.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Shahaan Bakht</div>
+</footer>
+
+</body>
+</html>
